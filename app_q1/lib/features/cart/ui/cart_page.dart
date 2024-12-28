@@ -1,4 +1,5 @@
 import 'package:app_q1/features/cart/bloc/cart_bloc.dart';
+import 'package:app_q1/features/counter/ui/counter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -72,21 +73,7 @@ class _CartPageState extends State<CartPage> {
                             color: Colors.pink.shade50,
                             border: Border.all(color: Colors.pink.shade300),
                           ),
-                          child: Row(
-                            children: [
-                              IconButton(
-                                icon: Icon(Icons.remove_circle,
-                                    color: Colors.pink),
-                                onPressed: () {},
-                              ),
-                              Text('1'),
-                              IconButton(
-                                icon:
-                                    Icon(Icons.add_circle, color: Colors.pink),
-                                onPressed: () {},
-                              ),
-                            ],
-                          ),
+                          child: Counter(),
                         )
                       ],
                     ),
